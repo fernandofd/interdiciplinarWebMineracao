@@ -1,13 +1,5 @@
 /* Reset de estilos para garantir consistência entre navegadores */
-body,
-h1,
-h2,
-h3,
-p,
-img {
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -40,8 +32,8 @@ header {
     font-family: Arial, sans-serif;
     color: whitesmoke;
     background: linear-gradient(to left, #4f2d2d, #000000);
-    padding: 20px;
     text-align: center;
+    padding-top: 15px;
 }
 
 .logo {
@@ -50,7 +42,7 @@ header {
 
 .logo img {
     max-width: 150px;
-    height: auto;
+    /* height: auto; */
 }
 
 .header-content {
@@ -103,7 +95,7 @@ main {
 }
 
 section {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     display: flex; /* Adicionando flexbox para alinhar os elementos verticalmente */
     flex-direction: column; /* Alinhar os elementos verticalmente */
     align-items:start; /* Centralizar os elementos horizontalmente */
@@ -126,30 +118,10 @@ section img {
     margin: 10px auto;
 }
 
-/* Estilos específicos para os vídeos do YouTube */
-section#meus-videos {
-    text-align: center;
-}
 
-.youtube-channel {
-    margin-bottom: 30px;
-}
-
-.youtube-channel h3 {
-    color: whitesmoke;
-    border-bottom: 2px solid #555;
-    padding-bottom: 5px;
-    margin-top: 20px;
-}
-
-.youtube-channel iframe {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 10px;
-}
 
 footer {
-    background-image: url('/fundorocha.jpg');
+    background: linear-gradient(to left, #4f2d2d, #000000);
     color: whitesmoke;
     text-align: center;
     padding: 10px;
@@ -189,11 +161,29 @@ li {
     margin-top: 10%;
 
 }
-img{
+section img {
     width: 400px;
     height:400px ;
    padding-top: 5%;
 }
-div{
+main div{
     margin-top: 8%;
+}
+
+/* Estilos específicos para os vídeos do YouTube */
+section#meus-videos {
+    text-align: center;
+    justify-content: center;
+}
+
+.youtube-channel {
+    margin-bottom: 30px;
+}
+
+
+
+.youtube-channel iframe {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 5px;
 }
