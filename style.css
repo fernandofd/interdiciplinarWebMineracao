@@ -1,0 +1,202 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img {
+    margin: 5%;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url('/fundorocha.jpg');
+    font-size: 16px; /* Tamanho base da fonte em pixels (px) */
+
+    /* A imagem de fundo se ajustará para cobrir toda a tela */
+    /* background-size: cover; */
+    
+    /* A imagem de fundo não será repetida */
+    /* background-repeat: no-repeat; */
+
+    /* Centralizando a imagem de fundo vertical e horizontalmente */
+    background-position: center center;
+
+    /* Definindo o tamanho da altura para que a imagem cubra toda a tela */
+    min-height: 100vh;
+    min-width: 100vw;
+
+    /* Removendo margens e preenchimentos padrão */
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5; Tom de cinza claro para o fundo da página */
+    
+}
+
+h1 {
+    font-size: 28px; /* Tamanho maior para os títulos de primeira ordem */
+}
+
+h2 {
+    font-size: 24px; /* Tamanho para os títulos de segunda ordem */
+}
+
+h3 {
+    font-size: 20px; /* Tamanho para os títulos de terceira ordem */
+}
+
+p {
+    font-size: 18px; /* Tamanho para os parágrafos */
+}
+
+header {
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url('/fundorocha1.jpg');
+
+    /* A imagem de fundo se ajustará para cobrir toda a tela */
+    /* background-size:cover; */
+    
+    /* A imagem de fundo não será repetida */
+    /* background-repeat: no-repeat; */
+
+    /* Centralizando a imagem de fundo vertical e horizontalmente */
+   
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-picture {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info {
+    text-align: left;
+    color: whitesmoke;
+}
+
+.personal-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+nav {
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    background-image: url('/fundorocha.jpg');
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: whitesmoke;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin-top: 10px; /* Adicionar espaço entre o título e o texto */
+    text-align: justify; /* Justificar o texto dentro das seções */
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto; /* Centralizar as imagens e adicionar espaçamento */
+}
+
+/* Estilos específicos para os vídeos do YouTube */
+section#meus-videos {
+    text-align: center;
+}
+
+.youtube-channel {
+    margin-bottom: 30px;
+}
+
+.youtube-channel h3 {
+    color: whitesmoke;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.youtube-channel iframe {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+footer {
+    background-image: url('/fundorocha.jpg');
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+#rochas{
+    margin-top: 10%; /* Adiciona um espaçamento entre as imagens */
+}
+#equipamentos{
+    margin-top: 10%; /* Adiciona um espaçamento entre as imagens */
+}
+#rochas img {
+    max-width: 300px; /* Define a largura máxima para as imagens */
+    height: auto; /* Mantém a proporção original da imagem */
+    /* margin-top: 5%; Adiciona um espaçamento entre as imagens */
+  }
+  #equipamentos img {
+    max-width: 300px; /* Define a largura máxima para as imagens */
+    height: auto; /* Mantém a proporção original da imagem */
+    /* margin-top: 5%; Adiciona um espaçamento entre as imagens */
+  }
+ 
+
