@@ -4,8 +4,6 @@ h1,
 h2,
 h3,
 p,
-ul,
-li,
 img {
     margin: 0;
     padding: 0;
@@ -105,7 +103,10 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 5%;
+    display: flex; /* Adicionando flexbox para alinhar os elementos verticalmente */
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    align-items:start; /* Centralizar os elementos horizontalmente */
 }
 
 section h2 {
@@ -120,15 +121,9 @@ section p {
 
 section img {
     display: block;
-    max-width: 80%; /* Ajusta o tamanho das imagens para ocupar cerca de 80% da largura */
+  
     height: auto;
     margin: 10px auto;
-}
-
-/* Aumentar a largura das li */
-ul li {
-    width: 80%; /* Ajusta a largura das li para ocupar cerca de 80% da largura */
-    margin: 0 auto;
 }
 
 /* Estilos específicos para os vídeos do YouTube */
@@ -180,4 +175,25 @@ footer p {
 #equipamentos img {
     max-width: 100%;
     height: auto;
+}
+
+/* Aumentar a largura das li */
+ul {
+   
+    padding: 5px;
+    align-items:start; /* Centralizar os elementos horizontalmente */
+}
+
+li {
+   
+    margin-top: 10%;
+
+}
+img{
+    width: 400px;
+    height:400px ;
+   padding-top: 5%;
+}
+div{
+    margin-top: 8%;
 }
