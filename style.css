@@ -167,6 +167,7 @@ section#meus-videos {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .imginicial{
