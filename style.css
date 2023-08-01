@@ -1,59 +1,29 @@
-/* Reset de estilos para garantir consistência entre navegadores */
-
-
 body {
-    font-family: Arial, sans-serif;
-    color: whitesmoke;
-    background: linear-gradient(to left, #686767, #000000);
-    font-size: 16px; /* Tamanho base da fonte em pixels (px) */
-    min-height: 100vh;
-    min-width: 100vw;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    font-size: 28px; /* Tamanho maior para os títulos de primeira ordem */
-}
-
-h2 {
-    font-size: 24px; /* Tamanho para os títulos de segunda ordem */
-}
-
-h3 {
-    font-size: 20px; /* Tamanho para os títulos de terceira ordem */
-}
-
-p {
-    font-size: 18px; /* Tamanho para os parágrafos */
+    font-family: Arial, sans-serif;
+    color:black;
+    background-color: #cdccd4;
 }
 
 header {
-    font-family: Arial, sans-serif;
-    color: whitesmoke;
-    background: linear-gradient(to left, #4f2d2d, #000000);
+    background: linear-gradient(to left, #000000,#0d0251);
+    padding: 20px;
     text-align: center;
-    padding-top: 15px;
 }
 
-.logo {
-    margin-bottom: 10px;
-}
 
-.logo img {
-    max-width: 150px;
-    /* height: auto; */
-}
 
 .header-content {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .profile-picture {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
@@ -62,7 +32,7 @@ header {
 
 .personal-info {
     text-align: left;
-    color: whitesmoke;
+    color: #fff; /* Cor branca para o texto do header */
 }
 
 .personal-info h1 {
@@ -75,54 +45,37 @@ header {
 }
 
 nav {
-    color: whitesmoke;
-    padding: 10px;
+    background: linear-gradient(to left, #000000,#260adc);
+    padding: 6px;
     text-align: center;
-    background: linear-gradient(to left, #4f2d2d, #000000);
 }
 
 nav a {
-    color: whitesmoke;
+    color: #fff; /* Cor branca para os links do nav */
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
+    margin: 0 7px;
+    padding: 2px 6px;
 }
 
 main {
-    max-width: 80%; /* Ajusta o tamanho do conteúdo para cerca de 80% da largura */
+    max-width: 100vw;
     margin: 20px auto;
     padding: 20px;
 }
 
 section {
-    /* margin-bottom: 5%; */
-    display: flex; /* Adicionando flexbox para alinhar os elementos verticalmente */
-    flex-direction: column; /* Alinhar os elementos verticalmente */
-    align-items:start; /* Centralizar os elementos horizontalmente */
+    margin-bottom: 30px;
 }
 
 section h2 {
-    color: whitesmoke;
+    color: black;
     border-bottom: 2px solid #555;
     padding-bottom: 5px;
 }
 
-section p {
-    margin-top: 10px;
-}
-
-section img {
-    display: block;
-  
-    height: auto;
-    margin: 10px auto;
-}
-
-
-
 footer {
-    background: linear-gradient(to left, #4f2d2d, #000000);
-    color: whitesmoke;
+    background: linear-gradient(to left, #000000,#260adc);
+    color: #fff;
     text-align: center;
     padding: 10px;
 }
@@ -131,59 +84,99 @@ footer p {
     margin: 0;
 }
 
-#rochas {
-    margin-top: 20%;
-}
+/* Regras de mídia para ajustar o layout em dispositivos móveis */
+@media (max-width: 600px) {
+    main{
+        font-size: small;
+        max-width: 100vw;
+        margin: 5px auto;
+        padding: 5px;
+        
+    }
+    .header-content {
+        font-size: small;
+        display: flex;
+        position: relative;
+        
+    }
 
-#equipamentos {
-    margin-top: 20%;
-}
+    .profile-picture {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        max-width:80px;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-#rochas img {
-    max-width: 100%;
-    height: auto;
-}
+    nav {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        justify-items: center;
+        font-size: small;
+    }
 
-#equipamentos img {
-    max-width: 100%;
-    height: auto;
-}
+    nav a {
+        margin: 3px;
+        font-size: small;
+    }
 
-/* Aumentar a largura das li */
-ul {
+    .personal-info {
+        font-size: small;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        justify-items: center;
+       
+    }
+
    
-    padding: 5px;
-    align-items:start; /* Centralizar os elementos horizontalmente */
 }
 
-li {
-   
-    margin-top: 10%;
-
-}
-section img {
-    width: 400px;
-    height:400px ;
-   padding-top: 5%;
-}
-main div{
-    margin-top: 8%;
-}
-
-/* Estilos específicos para os vídeos do YouTube */
+/* Estilos para centralizar os vídeos */
 section#meus-videos {
-    text-align: center;
-    justify-content: center;
+    text-align: center; /* Centraliza os vídeos na seção */
 }
 
 .youtube-channel {
     margin-bottom: 30px;
 }
 
-
+.youtube-channel h3 {
+    color:black;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
 
 .youtube-channel iframe {
     max-width: 100%;
     height: auto;
-    margin: 0 auto 5px;
+}
+.sinicial{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.imginicial{
+    width: 30vw;
+   height: 20vw;
+
+}
+.dinicial{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-around;
 }
