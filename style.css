@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color:black;
-    background-color: #cdccd4;
+    background-color: white;
 }
 
 header {
@@ -169,13 +169,19 @@ section#meus-videos {
     justify-content: center;
     margin-bottom: 40px;
 }
-
-.imginicial{
+img{
+    
     width: 30vw;
    height: 20vw;
 
 }
 .dinicial{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-around;
+}
+.divimg{
     display: flex;
     flex-direction: row;
     text-align: center;
